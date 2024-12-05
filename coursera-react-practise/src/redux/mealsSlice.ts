@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type Meal = keyof Omit<MealsState["meals"], "totalPeople">;
+export type Meal = keyof Omit<MealsState["meals"], "totalPeople">;
 
 interface MealsState {
   meals: {
@@ -36,5 +36,5 @@ const mealsSlice = createSlice({
   },
 });
 
-export const { toggleMeal } = mealsSlice.actions;
+export const { toggleMeal, updatePeople } = mealsSlice.actions;
 export default mealsSlice.reducer;

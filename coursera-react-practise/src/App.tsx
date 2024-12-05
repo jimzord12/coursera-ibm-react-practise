@@ -9,6 +9,14 @@ function App() {
       <Routes>
         <Route index element={<LandingPage />} />
         <Route path="services" element={<ServicesPage />} />
+        <Route
+          path="*"
+          element={
+            <div className="w-screen h-screen flex items-center justify-center">
+              <span className="text-6xl ">404 Not Found</span>
+            </div>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

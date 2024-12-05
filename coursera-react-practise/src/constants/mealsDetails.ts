@@ -1,6 +1,6 @@
 export const mealsDetails = {
-  breakfastPrice: 50,
-  highTeaPrice: 25,
-  lunchPrice: 65,
-  dinnerPrice: 70,
+  breakfast: 50,
+  highTea: 25,
+  lunch: 65,
+  dinner: 70,
 };
