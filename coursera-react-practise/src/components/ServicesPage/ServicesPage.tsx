@@ -1,11 +1,16 @@
+import { Link } from "react-router";
 import MealsServiceSection from "../MealsServiceSection";
 import ServiceSection from "../ServiceSection";
 
 const ServicesPage = () => {
   return (
-    <main className="relative w-screen h-screen bg-orange-200">
+    <main className="relative w-full h-full">
       <nav className="bg-orange-500 flex py-8 px-12 justify-between shadow-md">
-        <h1 className="flex-auto w-[15%] text-start font-serif">EasyMeet</h1>
+        <Link to="/" className="flex-auto w-[15%] text-start font-serif">
+          <h1 className="flex-auto w-[15%] text-start font-serif text-white hover:scale-110 duration-500">
+            EasyMeet
+          </h1>
+        </Link>
         <ul className="flex flex-auto w-[65%] justify-around items-center font-mono text-xl">
           <li className="cursor-pointer hover:text-blue-600 hover:underline ">
             Venue

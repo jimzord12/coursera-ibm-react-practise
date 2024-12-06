@@ -1,6 +1,6 @@
 import { Room } from "../redux/roomSlice";
 
-export const roomsDetails: (Omit<Room, "quatity"> & { img: string })[] = [
+export const roomsDetails: (Omit<Room, "quantity"> & { img: string })[] = [
   {
     id: 101,
     name: "Conference Room",

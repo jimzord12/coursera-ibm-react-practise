@@ -56,9 +56,10 @@ const MealsServiceSection = () => {
       >
         <div className="flex gap-4 w-full px-8 mb-12 justify-center items-center">
           <p className="text-lg drop-shadow-lg font-semibold">
-            Number of People
+            Number of People:
           </p>
           <input
+            className="bg-zinc-300 text-black rounded-sm px-2"
             type="number"
             onChange={handlePeopleInput}
             value={peopleInput}

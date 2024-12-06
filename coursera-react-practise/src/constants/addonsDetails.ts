@@ -1,6 +1,6 @@
 import { AddOn } from "../redux/addOnsSlice";
 
-export const addonsDetails: (Omit<AddOn, "quatity"> & {
+export const addonsDetails: (Omit<AddOn, "quantity"> & {
   img: string;
 })[] = [
   {
