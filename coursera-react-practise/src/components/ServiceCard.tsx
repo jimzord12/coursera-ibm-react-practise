@@ -38,7 +38,7 @@ const ServiceCard = ({ data }: ServiceCardProps) => {
   // console.log("Add-On: ", specificAddon);
 
   return (
-    <div className="w-[280px] h-[380px] shadow-lg bg-zinc-300 text-black rounded-md p-2 justify-center items-center">
+    <div className="w-[280px] h-[380px] shadow-lg bg-zinc-300 text-black rounded-md p-2 justify-center items-center border-2 border-blue-400">
       <h1 className="text-2xl font-semibold">{data.name}</h1>
       <div className="mt-4 h-2/5 rounded-md outline-dotted">
         <img

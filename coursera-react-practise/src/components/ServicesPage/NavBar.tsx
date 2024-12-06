@@ -6,9 +6,9 @@ const NavBar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <nav className="bg-orange-500 flex py-8 px-12 justify-between shadow-md">
+    <nav className="bg-orange-500 flex py-8 px-12 justify-between shadow-xl">
       <Link to="/" className="flex-auto w-[15%] text-start font-serif">
-        <h1 className="flex-auto w-[15%] text-start font-serif text-white hover:scale-110 duration-500">
+        <h1 className="flex-auto w-[15%] text-start font-serif text-white hover:drop-shadow-lg hover:-rotate-12 duration-300 text-clip">
           EasyMeet
         </h1>
       </Link>

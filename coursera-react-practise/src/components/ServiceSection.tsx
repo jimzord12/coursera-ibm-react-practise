@@ -39,7 +39,7 @@ const ServiceSection = ({ title, type }: ServiceSectionProps) => {
     <section className="">
       <SectionHeader title={title} />
       <div
-        className="bg-slate-600/50 max-w-[1280px] mx-auto my-0 mt-4 rounded-md flex flex-wrap justify-start gap-4 py-6 px-14"
+        className="bg-slate-600/50 max-w-[1280px] mx-auto my-0 mt-4 rounded-md flex flex-wrap justify-start gap-4 py-6 px-14 shadow-xl"
         ria-describedby="section-body"
       >
         {data.map((el, idx) => (
