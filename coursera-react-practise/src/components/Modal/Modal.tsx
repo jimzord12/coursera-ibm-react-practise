@@ -17,7 +17,6 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
           isOpen ? "scale-100 opacity-100" : "scale-125 opacity-0"
         }`}
       >
-        button
         {children}
       </div>
     </div>
