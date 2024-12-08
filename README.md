@@ -29,3 +29,5 @@ npm run dev
 ```
 
 5. Open the browser and go to [http://localhost:5143/](http://localhost:5143/)
+
+## Thanks for reviewing my project ❤️
