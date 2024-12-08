@@ -25,17 +25,33 @@ const Cart = () => {
         </h1>
 
         <div className="flex flex-col gap-4 max-h-[75vh] overflow-auto scrollbar-hidden">
-          {allPlants.map((p) => (
-            <CartCard data={p} key={p.id} />
-          ))}
+          {allPlants.length !== 0 ? (
+            allPlants.map((p) => <CartCard data={p} key={p.id} />)
+          ) : (
+            <h1 className="my-12 text-2xl italic *:font-semibold text-black">
+              Your cart is empty!
+            </h1>
+          )}
         </div>
 
-        <button
-          className="px-4 py-2 mt-4 text-white rounded-md bg-emerald-800"
-          onClick={() => setIsModalOpen(false)}
-        >
-          Continue Shopping
-        </button>
+        <div className="flex justify-center gap-6">
+          <button
+            className="px-4 py-2 mt-4 text-white rounded-md bg-emerald-800"
+            onClick={() => setIsModalOpen(false)}
+          >
+            Continue Shopping
+          </button>
+          <button
+            className="px-4 py-2 mt-4 text-white rounded-md bg-sky-600"
+            onClick={() => {
+              alert(
+                "Checkout is not implemented yet. Please wait for the next update."
+              );
+            }}
+          >
+            Chekckout 🛒
+          </button>
+        </div>
       </Modal>
     </>
   );
